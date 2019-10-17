@@ -1,9 +1,63 @@
 *{
+    border: 0;
     margin: 0;
     padding: 0;
 }
 
+body {
+    color: #626262;
+    font-family: 'Playfair Display', serif;
+}
 
-p{
-    color: green;
+.menu-main {
+    text-align: center;
+}
+
+button {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    padding: 78px 60px;
+    display: inline-block;
+    text-transform: uppercase;
+
+}
+
+
+button:hover {
+    color: #03a9f4;
+    /* box-shadow: inset 0 0 10px #ccc; */
+}
+
+
+
+
+
+
+.content {
+    list-style: none;
+    text-align: center;
+    background-color: gray;
+    display: inline-block;
+}
+
+article {
+    padding: 30px 30px;
+}
+
+h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 14px; 
+}
+
+button {
+    font-size: 20px;
 }
