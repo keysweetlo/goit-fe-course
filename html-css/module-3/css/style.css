@@ -19,9 +19,7 @@ button {
     padding: 78px 60px;
     display: inline-block;
     text-transform: uppercase;
-
 }
-
 
 button:hover {
     color: #03a9f4;
@@ -33,16 +31,34 @@ button:hover {
 
 
 
+
+
+
 .content {
     list-style: none;
     text-align: center;
-    background-color: gray;
     display: inline-block;
+
+    background-color: gray;
 }
 
-article {
-    padding: 30px 30px;
+
+
+.rose {
+
+    background-color: green;
+
 }
+
+
+
+
+
+
+
+
+
+
 
 h4 {
     font-family: 'Ubuntu', sans-serif;
@@ -57,6 +73,15 @@ h2 {
 p {
     font-size: 14px; 
 }
+
+
+
+
+
+
+
+
+
 
 button {
     font-size: 20px;
