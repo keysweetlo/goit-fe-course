@@ -18,6 +18,8 @@ button {
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     padding: 78px 60px;
+    padding-block-end: 30px; 
+
     display: inline-block;
     text-transform: uppercase;
     color: #626262;
@@ -45,7 +47,8 @@ button:hover {
 
 .content-a {
     margin: auto;
-    padding-block-end: 70px; 
+    padding-top: 40px;
+    padding-block-end: 30px; 
 }
 
 
@@ -101,7 +104,8 @@ img {
 
 .menu-footer {
     text-align: center;
-    padding: 20px;
+    /* margin: 0px; */
+    /* padding: -20px; */
 }
 
 .footer-text {
