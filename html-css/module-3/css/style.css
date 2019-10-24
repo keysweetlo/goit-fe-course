@@ -21,6 +21,7 @@ button {
     display: inline-block;
     text-transform: uppercase;
     color: #626262;
+    background-color: white;
 }
 
 button:hover {
