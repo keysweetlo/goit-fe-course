@@ -190,16 +190,17 @@ h5::after {
 
 
 button {
+    font-weight: 300;
+    font-size: 16px;
     display: inline-block;
     color: white;
     border-radius: 3px;
     background-color: rgb(78, 198, 171);
     width: 160px;
     height: 51px;
+
 }
 
 .button {
-    float: left;
-    font-weight: 300;
-    font-size: 16px;
+    /* float: left; */
 }
