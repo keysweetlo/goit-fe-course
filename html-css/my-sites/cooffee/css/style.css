@@ -1,98 +1,48 @@
-
-
-/* 
-* Последовательно раскомментируйте CSS-правила и посмотрите результат */
-
-/* Выберет первый элемент в коллекции соседей */
-/* .list li:first-child {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все элементы в коллекции соседей кроме первого*/
-/* .list li:not(:first-child) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет последний элемент в коллекции соседей */
-/* .list li:last-child {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все элементы в коллекции соседей кроме последнего*/
-/* .list li:not(:last-child) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все не четные элементы коллекции */
-/* .list li:nth-child(odd) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все четные элементы коллекции */
-/* .list li:nth-child(even) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет все элементы коллекции начиная с третьего*/
-/* .list li:nth-child(n + 3) {
-  background-color: #03a9f4;
-} */
-
-/* Выберет первые 3 элемента коллекции*/
-/* .list li:nth-child(-n + 3) {
-  background-color: #03a9f4;
-} */
-
-
-
-
-
-
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
-.list {
-  border: 2px solid #212121;
-  padding: 5px;
-  list-style: none;
-  font-family: Roboto, sans-serif;
+a  {
+  text-decoration: none; 
+  color: #000000;
 }
-
-.list li {
-  padding: 4px 0;
-  font-size: 18px;
-  color: #212121;
+.wraper {
+  /* display: inline-block; */
+  /* max-width: 960px; */
   text-align: center;
-  text-transform: uppercase;
+  /* margin: auto; */
 }
+.card {
+  margin: 15px;
+  /* .outer-box.top > div { */
+  vertical-align: top;
 
-.list li:not(:last-child) {
-  margin-bottom: 8px;
-}
-
-.container {
-  max-width: 480px;
-  margin: auto;
-  padding: 10px;
-}
-
-
-
-
-
-li:nth-of-type(n+2) {
-    color: white;
-}
-
-div {
-    background: linear-gradient(to right, rgba(100%, 0%, 0%, 0), rgba(100%, 0%, 0%, 1));
 
 }
+article {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #626262;
+  height: 500px;
+  width: 350px;
 
+  
+}
+.card img {
+  width: 100px;
+  border-radius: 100%;
+  margin: 40px;
+}
 
-/* .menu:hover > .submenu
-input[type="text"]::checked */
+.parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 400px;
+}
+
+.bg1 {
+  background-image: url(../img/samantha-gades-yGPbbuBDT9w-unsplash.jpg);
+}
