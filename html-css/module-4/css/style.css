@@ -17,7 +17,7 @@
     width: 1170px;
     margin: auto;
 }
-h3, h2 {
+h3, h2, span {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 }
@@ -36,12 +36,12 @@ h4 {
     font-size: 18px;
 }
 .card-title {
-    font-weight: 600;
-    font-size: 18px;
+    /* font-size: 18px; */
     background-color: #323232;
 }
-h3 {
+h3, span {
     color: white;
+    font-size: 18px;
 }
 p {
     font-weight: 400;
