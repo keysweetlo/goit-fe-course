@@ -9,19 +9,70 @@
     display: table;
     clear: both;
   } 
-
-
-
-
 .wraper {
-    width: 1170px;
+    width: 1100px;
     margin: auto;
 }
+.navigation {
+ text-transform: uppercase;
+}
+h1 a {
+ text-decoration: none; 
+ font-family: 'Roboto', sans-serif;
+ font-size: 30px;
+ font-weight: 300;
+ float: left;
+ color: #555252;
+ margin: 28px 0 28px 0;
+}
+h1 a::first-letter {
+ font-weight: 900;
+ color: #1abc9c;
+}
+
+ul {
+ float: right;
+ margin-top: 38px;
+}
+li {
+ font-size: 14px;
+ font-weight: 900;
+ display: inline-block;
+ color: #0f0101;
+ margin-right: 30px;
+}
+li:last-child {
+ margin-right: 0px;
+}
+.menu li:hover a {
+ color: #1abc9c;
+}
+li a  {
+ text-decoration: none; 
+ font-family: 'Open Sans', sans-serif;
+ color: #0f0101;
+}
+.wraper {
+ text-align: center;
+}
+.slider {
+ margin: 0 auto;
+ position: relative;
+}
+
+img {
+ width: 100%;
+ filter: brightness(0.522);
+ /* opacity: 0.5;
+ background-color: #000002; */
+ 
+}
+
+/* 
 h3, h2, span {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 }
-
 h2, h4, p {
     color: #555252;
 }
@@ -36,7 +87,6 @@ h4 {
     font-size: 18px;
 }
 .card-title {
-    /* font-size: 18px; */
     background-color: #323232;
 }
 h3, span {
@@ -47,57 +97,18 @@ p {
     font-weight: 400;
     font-size: 14px;
 }
-a  {
-    text-decoration: none; 
-    font-family: 'Open Sans', sans-serif;
-    color: #0f0101;
-}
-
-
-
-
-.navigation {
-    text-transform: uppercase;
-}
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    float: left;
-    color: #555252;
-    margin: 28px 0 85px 30px;
-}
-h1::first-letter {
-    font-weight: 900;
-    color: #1abc9c;
-}
-
-ul {
-    float: right;
-    margin-top: 38px;
-    margin-right: 30px;
-}
-li {
-    font-size: 14px;
-    font-weight: 900;
-    display: inline-block;
-    color: #0f0101;
-    margin-right: 30px;
-}
-li:last-child {
-    margin-right: 0px;
-}
-.menu li:hover a {
-    color: #1abc9c;
-}
+ */
 
 
 
 
 
-.shop-wraper {
-    text-align: center;
-}
+
+
+
+
+
+/* 
 main {
     text-transform: uppercase;
 }
@@ -116,8 +127,6 @@ h2::after {
 }
 .shop-assortment {
     text-align: right;
-    /* или указать 4 и 8 shop-card
-    margin-right: -4px; */
 }
 article {
     display: inline-block;
@@ -130,7 +139,7 @@ article {
 }
 .shop-card:hover .card-title {
     background-color: #1abc9c;
-}
+} */
 
 
 
@@ -156,7 +165,7 @@ img {
 
 
 
-.news-card {
+/* .news-card {
     width: 350px;
     text-align: left;
     margin: 0 30px 80px 0px;
@@ -192,4 +201,4 @@ h4::after {
     width: 160px;
     height: 51px;
     padding: 13px;
-}
+} */
