@@ -115,12 +115,10 @@ header {
   justify-content: space-between;
 }
 h2:after {
-  /* display: flex; */
   content: '';
   width: 60px;
   height: 3px;
   background: #f38181;
-  /* display: block; */
   margin-top: 42px;
   
 }  
@@ -128,9 +126,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* min-height: 227px; */
   width: 315px;
-  /* width: 500px; */
   flex-direction: column;
 }
 .title-up {
@@ -145,7 +141,6 @@ h2 {
 
 
 .content-up{
-  background: #cccccc;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -154,7 +149,6 @@ h2 {
 
 }
 .section {
-  background: #a5a3a3;
   align-items: flex-start;
   justify-content: space-evenly;
 
@@ -187,16 +181,8 @@ h2 {
   display: flex;
   flex-direction: column;
   margin-bottom: 45px;
-  /* min-height: 218px; */
 }
-/* .description{
-  display: flex;
-  min-height: 80px;
-  align-items:	flex-end;
-  text-align: center;
-  justify-content: space-between;
-  width: 980px;
-} */
+
 
 .description{
   text-align: center;
@@ -208,7 +194,6 @@ margin: auto;
 
 
 .content-down{
-  background: #cccccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -219,7 +204,6 @@ margin: auto;
   display: flex;
   flex-direction: column;
   min-height: 540px;
-  background: #463737;
   justify-content: space-between;
   width: 380px;
 }
@@ -230,7 +214,6 @@ margin: auto;
   text-align: center;
   min-height: 40px;
   justify-content: space-between;
-  background-color: rgb(143, 97, 97);
 }
 .article img {
   display: flex;
@@ -238,24 +221,47 @@ margin: auto;
 }
 
 
+
+
+.section-social {
+  background-image: linear-gradient(hsla(0, 83%, 73%, 0.9), hsla(47, 95%, 76%, 0.9));
+height: 470px;}
+
+
+
+
+
+
+
+
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e5e5;
+}
 footer {
   display: flex;
 justify-content: space-between;
+min-height: 60px;
+align-items: center;
 }
-footer::before {
-  content: '';
-  width: 100%q;
-  height: 3px;
-  display: block;
-  margin-top: 5px;
-  background-color: rgb(143, 97, 97);
 
-}
 .text-footer{
   display: flex;
 
 }
+.input-text {
+  display: flex;
+  border: 1px solid #e7e7e7;
+  width: 230px;
+  height: 40px;
+  align-items: center;
+  padding-left: 12px;
+  /* justify-content: ; */
+}
 .section-subscribe {
   display: flex;
-
+width: 380px;
+height: 40px;
 }
