@@ -35,15 +35,10 @@ li {
 h1 a {
   text-decoration: none;
   color: #95e1d3;
+  /* font-size: 14px; */
   font-size: 30px;
 }
-/* СЛЕПОЙ ОТСТУП */
-h1 a:after {
-  content: '';
-  height: 3px;
-  display: block;
-  margin-top: 5px;
-}
+
 
 .navigation-menu a {
   text-decoration: none;
@@ -53,21 +48,38 @@ h1 a:after {
 .navigation-menu a:hover{
   color: #f38181;
 }
+.navigation-menu .ps {
+  /* position: fixed; */
+  /* position: relative; */
+}
 .navigation-menu a:hover:after {
+  position: absolute;
   content: '';
   width: auto;
+  /* width: 100px; */
   height: 3px;
   background: #f38181;
-  display: block;
-  margin-top: 8px;
+  /* display: block; */
+  left: auto;
+  right: auto;
+  /* top: 62px; */
+  /* transform: translate(-50%,-50%); */
+
+
+display: flex;
+align-items: flex-end;
+
+
+
+
 }
-/* СЛЕПОЕ ПОДЦЕРКИВАНИЕ ЧТОБЫ НЕ ПРЫГАЛО МЕНЮ */
-.navigation-menu a:after {
-  content: '';
-  height: 3px;
-  display: block;
-  margin-top: 8px;
-}
+
+
+
+
+
+
+
 h2, h3, .text-footer {
   color: #333333;
 }
@@ -106,7 +118,7 @@ header {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  min-height: 65px;
+  min-height: 54px;
 
 }
 .navigation-menu {
@@ -211,12 +223,16 @@ margin: auto;
   transition-property: color;
   transition-duration: 200ms;
 }
-.article:hover {
+.article:hover .section-move{
   transform: translate(-10px, -10px);
-  color: white;
+  box-shadow: 10px 10px #95e1d3;
+  transition-duration: 1.2s;
 }
+.article:hover .section-social{
+  display: flex;
+  background-image: linear-gradient(hsla(0, 83%, 73%, 0.9), hsla(47, 95%, 76%, 0.9));
 
-
+}
 .text-article {
   display: flex;
   flex-direction: column;
@@ -236,10 +252,9 @@ margin: auto;
 
 .section-social {
   position: absolute;
-  color: linear-gradient(hsla(0, 83%, 73%, 0.9), hsla(47, 95%, 76%, 0.9));
   width: 380px;
   height: 470px;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 .button-social {
@@ -291,7 +306,6 @@ align-items: center;
   height: 40px;
   align-items: center;
   padding-left: 12px;
-  /* justify-content: ; */
 }
 .section-subscribe {
   display: flex;
