@@ -10,8 +10,8 @@
 }
   /* ШРИФТЫ И НАЧЕРТАНИЯ */
 @font-face {
-  font-family: WisdomScript; /* Гарнитура шрифта */
-  src: url('../fonts/WisdomScript.otf'); /* Путь к файлу со шрифтом */
+  font-family: WisdomScript;
+  src: url('../fonts/WisdomScript.otf'); 
 }
 @font-face {
   font-family: MontserratRegular; 
@@ -25,18 +25,58 @@
   font-family: DroidSerifItalic; 
   src: url('../fonts/DroidSerifItalic.ttf');
 }
-
-/* шрифт робото
-font-family: 'Roboto Slab', serif; */
-
-
-
-
-
-
+.text-content p {
+font-family: 'Roboto Slab', serif;
+}
 h1 {
   font-family: 'WisdomScript';
 }
+.menu {
+  font-family: 'MontserratRegular';
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'MontserratBold';
+  text-transform: uppercase;
+}
+.description-up, .description-down {
+  font-family: 'DroidSerifItalic';
+  text-transform:none;
+}
+h3 {
+  font-family: 'MontserratBold';
+}
+/* ПИКТОГРАМКИ */
+.frame1 {
+  border: 3px solid #fed136;
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  background: url(../img/Icon-Basket.png) no-repeat;
+  background-position: 50% 50%;  
+}  
+.frame2 {
+  border: 3px solid #fed136;
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  background: url(../img/Icon-Laptop.png) no-repeat;
+  background-position: 50% 50%;  
+}  
+.frame3 {
+  border: 3px solid #fed136;
+  width: 66px;
+  height: 66px;
+  border-radius: 100%;
+  background: url(../img/Icon-Locked.png) no-repeat;
+  background-position: 50% 50%;  
+}  
+
+
 
 /* ЦВЕТА И РАЗМЕРЫ ШРИФТОВ */
 /* ПОЗИЦИОНИРОВАНИЕ ШАПКИ */
