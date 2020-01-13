@@ -4,8 +4,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.viewport {
-  width: 1200px;
+header, .section-up{
+  width: 940px;
   margin: auto;
 }
   /* ШРИФТЫ И НАЧЕРТАНИЯ */
@@ -25,31 +25,55 @@
   font-family: DroidSerifItalic; 
   src: url('../fonts/DroidSerifItalic.ttf');
 }
-.text-content p {
-font-family: 'Roboto Slab', serif;
-}
-h1 {
+h1 a{
   font-family: 'WisdomScript';
+  text-decoration: none;
+  color: #fed136;
+  font-size: 26px;
 }
-.menu {
+.menu a{
   font-family: 'MontserratRegular';
   text-transform: uppercase;
-}
-a {
   text-decoration: none;
+  color: #222222;
+  font-size: 14px;
 }
-
-h2 {
-  font-family: 'MontserratBold';
-  text-transform: uppercase;
+li {
+  list-style: none;
+}
+.menu a:hover {
+  color: #fed136;
 }
 .description-up, .description-down {
   font-family: 'DroidSerifItalic';
   text-transform:none;
 }
+.title-up h2 {
+  font-family: 'MontserratBold';
+  text-transform: uppercase;
+  color: #222222;
+  font-size: 40px;
+}
+.description-up {
+  color: #777777;
+  font-size: 16px;
+}
+.title-down h2 {
+  font-family: 'MontserratBold';
+  text-transform: uppercase;
+  color: white;
+  font-size: 40px;
+}
+.description-down {
+  color: #777777;
+  font-size: 16px;
+}
 h3 {
   font-family: 'MontserratBold';
+  color: #222222;
+  font-size: 18px;
 }
+
 /* ПИКТОГРАМКИ */
 .frame1 {
   border: 3px solid #fed136;
@@ -57,7 +81,8 @@ h3 {
   height: 66px;
   border-radius: 100%;
   background: url(../img/Icon-Basket.png) no-repeat;
-  background-position: 50% 50%;  
+  background-position: 50% 50%; 
+  margin: auto; 
 }  
 .frame2 {
   border: 3px solid #fed136;
@@ -66,6 +91,7 @@ h3 {
   border-radius: 100%;
   background: url(../img/Icon-Laptop.png) no-repeat;
   background-position: 50% 50%;  
+  margin: auto;
 }  
 .frame3 {
   border: 3px solid #fed136;
@@ -74,9 +100,99 @@ h3 {
   border-radius: 100%;
   background: url(../img/Icon-Locked.png) no-repeat;
   background-position: 50% 50%;  
+  margin: auto;
 }  
 
 
 
-/* ЦВЕТА И РАЗМЕРЫ ШРИФТОВ */
-/* ПОЗИЦИОНИРОВАНИЕ ШАПКИ */
+
+
+
+
+
+/* ПОЗИЦИОНИРОВАНИЕ */
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 65px;
+}
+.navigation-menu {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+
+
+
+
+
+.line-up{
+  display: flex;
+  /* min-height: 577px; */
+  flex-direction: column;
+}
+
+.title-up, .title-down {
+  display: flex;
+  /* justify-content: center; */
+  /* min-height: 160px; */
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  min-height: 50px;
+}
+.description-up {
+  min-height: 70px;
+}
+
+
+.section-up{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 308px;
+}
+.article-title {
+  min-height: 34px
+}
+.text-content {
+  font-family: 'Roboto Slab', serif;
+  color: #777777;
+  font-size: 14px;
+  width: 288px;
+  min-height: 177px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* НИЖНЯЯ ЛИНИЯ */
+.line-down {
+  min-height: 577px;
+  background-color: #222222;
+  background-image: url(../img/Map-Image.png) ;
+  background-repeat: no-repeat;
+  background-position: 100% 100% ;
+  vertical-align: bottom;
+}
