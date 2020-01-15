@@ -79,8 +79,8 @@ h3 {
 /* ПИКТОГРАМКИ */
 .frame1 {
   border: 3px solid #fed136;
-  width: 66px;
-  height: 66px;
+  width: 74px;
+  height: 74px;
   border-radius: 100%;
   background: url(../img/Icon-Basket.png) no-repeat;
   background-position: 50% 50%; 
@@ -88,8 +88,8 @@ h3 {
 }  
 .frame2 {
   border: 3px solid #fed136;
-  width: 66px;
-  height: 66px;
+  width: 74px;
+  height: 74px;
   border-radius: 100%;
   background: url(../img/Icon-Laptop.png) no-repeat;
   background-position: 50% 50%;  
@@ -97,8 +97,8 @@ h3 {
 }  
 .frame3 {
   border: 3px solid #fed136;
-  width: 66px;
-  height: 66px;
+  width: 74px;
+  height: 74px;
   border-radius: 100%;
   background: url(../img/Icon-Locked.png) no-repeat;
   background-position: 50% 50%;  
@@ -142,15 +142,15 @@ header {
 .title-up, .title-down {
   display: flex;
   justify-content: flex-end;
-  min-height: 194px;
+  min-height: 210px;
   flex-direction: column;
   align-items: center;
 }
 h2 {
-  min-height: 50px;
+  min-height: 55px;
 }
 .description-up {
-  min-height: 70px;
+  min-height: 54px;
 }
 
 
@@ -162,20 +162,20 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-height: 308px;
+  min-height: 315px;
 }
 .article-title {
-  min-height: 34px
+  min-height: 33px
 }
 .text-content {
   font-family: 'Roboto Slab', serif;
-  line-height: 22px;
-  font-weight: 100;
+  line-height: 21px;
+  /* font-weight: 100; */
 
   color: #777777;
   font-size: 14px;
   width: 288px;
-  min-height: 177px
+  min-height: 169px
 }
 
 
