@@ -202,3 +202,55 @@ h2 {
   background-position: 100% 100% ;
   vertical-align: bottom;
 }
+
+
+
+
+/* form, input {
+  font-family: 'Overlock', cursive;
+  font-size: 20px;
+} */
+
+input { 
+  /* display: flex;
+  flex-direction: column; */
+  line-height: 50px;
+  /* height: 30px; */
+  /* padding: 0; */
+  /* border-radius: 5px; */
+  /* text-indent: 6px; */
+
+ width: 455px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 212px;
+
+}
+.section-form {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+
+}
+.form {
+  /* display: flex; */
+
+  text-align: center;
+
+}
+/* input[type="submit"] {
+  padding: 0 10px;
+  height: 34px;
+  width: 80px;
+  background-color: var(--wr-dark-color);
+  box-shadow: var(--black-alfa2);
+  color: #eee;
+} */
+/* input[type="submit"]:hover {
+  box-shadow: var(--black-alfa1);
+  background-color: var(--wr-light-color);
+  cursor: pointer;
+} */
