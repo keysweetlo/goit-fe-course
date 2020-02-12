@@ -73,6 +73,7 @@ body {
     /* margin: auto; */
     background: url(../img/head-mob.jpg) no-repeat;
     /* width: 100%; */
+    background-size: cover;
 }
 .button-head {
     display: flex;
@@ -116,7 +117,8 @@ body {
     height: 70px;
     align-items: center; /* вертикаль */
     text-align: center;
-    width: 70%;
+    /* width: 70%; */
+    width: 230px;
     margin: auto;
 }
 .a-conteiner-up {
@@ -137,7 +139,13 @@ body {
     border-radius: 20px;
     width: 90%;
 }
-
+.tagline-down {
+    display: flex;
+    height: 115px;
+    align-items: flex-end; /* вертикаль */
+    justify-content: center;  /* горизонталь */
+    text-align: center;
+}
 
 
 
@@ -166,9 +174,13 @@ body {
     height: 10px;
 }
 .out {
-    background-color: #ff4e50;
-    width: 50px;
-    height: 50px;
+    /* background-color: #ff4e50; */
+    background: url(../img/Layer_6.png) no-repeat;
+
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+
 }
 .picto1{
     width: 32px;
