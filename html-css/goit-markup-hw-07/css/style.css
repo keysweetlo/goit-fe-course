@@ -59,12 +59,7 @@
 
 
 
-body {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-}
+
 
 
 /* ШАПКАААА */
@@ -79,9 +74,6 @@ body {
 .button-head {
     display: flex;
     justify-content: center;  
-}
-.button-head {
-    display: flex;
     height: 80px;
     align-items: center;
 }
@@ -136,21 +128,21 @@ body {
     background-color: rgb(255, 78, 80);
     height: 40px;
     border-radius: 20px;
-    width: 90%;
+    width: 280px;
 }
-.tagline-down {
-    display: flex;
-    height: 115px;
-    align-items: flex-end; /* вертикаль */
-    justify-content: center;  /* горизонталь */
-    text-align: center;
-}
+
 
 
 
 
 /* ФУТЕР */
-
+.tagline-down {
+    display: flex;
+    height: 120px;
+    align-items: flex-end; /* вертикаль */
+    justify-content: center;  /* горизонталь */
+    text-align: center;
+}
 .face {
     display: flex;
     height: 160px;
@@ -166,7 +158,6 @@ h4 {
 }
 .description-down {
     display: flex;
-    align-items: center; /* вертикаль */
     text-align: center;
     width: 230px;
     margin: auto;
@@ -187,12 +178,11 @@ h4 {
     background-color: rgba(255, 78, 81, 0);
     height: 40px;
     border-radius: 20px;
-    width: 90%;
+    width: 280px;
 
     border-style: solid;
     border-width: 2px;
     border-color: #ff4e50;
-
 }
 
 
@@ -324,5 +314,75 @@ h4 {
     .description-up {
         font-size: 23px;  
     }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width: 660px;
+        margin: auto;
+    }
+    .button-head {
+        height: 110px;
+    }
+    .logo {
+        height: 110px;
+        align-items: center; /* вертикаль */
+    }
+    .tagline {
+        height: 215px;
+        text-align: center;
+        width: 520px;
+        margin: auto;
+    }
+    .description-up {
+        height: 100px;
+        width: 800px;
+        justify-content: center;
+    }
+    .a-conteiner-up {
+        height: 280px;
+    }
+    .section-up {
+        background: url(../img/head-tab.jpg) no-repeat;
+        background-size: cover;
+    }
+    
 
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .tagline-down {
+        height: 100px;
+    }
+    .face {
+        height: 160px;
+        align-items: flex-end; /* вертикаль */
+    }
+    h4 {
+        align-items: center; /* вертикаль */
+        height: 50px;
+    }
+    .description-down {
+        display: flex;
+        align-items: center; /* вертикаль */
+        text-align: center;
+        width: 230px;
+        margin: auto;
+    }
 } 
+@media screen and (min-width: 1440px) {
+    .section-up {
+        background: url(../img/head-des.jpg) no-repeat;
+        background-size: cover;
+    }
+    .header {
+        width: 940px;
+    }
+    .team {
+        width: 940px;
+    }
+}
