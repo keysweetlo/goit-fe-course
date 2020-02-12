@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
     /* ШРИФТЫ И НАЧЕРТАНИЯ */
     .section-up, .section-down {
         font-family: 'Montserrat', sans-serif;
@@ -117,7 +118,6 @@ body {
     height: 70px;
     align-items: center; /* вертикаль */
     text-align: center;
-    /* width: 70%; */
     width: 230px;
     margin: auto;
 }
@@ -127,7 +127,6 @@ body {
     align-items: flex-start; /* вертикаль */
     justify-content: center;  /* горизонталь */
     text-align: center;
-
 }
 .a-up {
     display: flex;
@@ -150,8 +149,51 @@ body {
 
 
 
+/* ФУТЕР */
 
+.face {
+    display: flex;
+    height: 160px;
+    align-items: center; /* вертикаль */
+    justify-content: center;  /* горизонталь */
+}
+h4 {
+    display: flex;
+    height: 33px;
+    align-items: flex-start; /* вертикаль */
+    justify-content: center;  /* горизонталь */
+    text-align: center;
+}
+.description-down {
+    display: flex;
+    align-items: center; /* вертикаль */
+    text-align: center;
+    width: 230px;
+    margin: auto;
+}
+.a-conteiner-down {
+    display: flex;
+    height: 100px;
+    align-items: center; /* вертикаль */
+    justify-content: center;  /* горизонталь */
+    text-align: center;
+    margin-bottom: 30px;
+}
+.a-down {
+    display: flex;
+    align-items: center; /* вертикаль */
+    justify-content: center;  /* горизонталь */
 
+    background-color: rgba(255, 78, 81, 0);
+    height: 40px;
+    border-radius: 20px;
+    width: 90%;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff4e50;
+
+}
 
 
 
@@ -167,40 +209,120 @@ body {
 
 
 /* ПИКТОГРАМКИ */
-.in {
-    /* background-color: #925556; */
+.inner-box1 {
     background: url(../img/Shape128.svg) no-repeat;
-    width: 10px;
-    height: 10px;
+    width: 36px;
+    height: 36px;
+    background-color: #ff4e50;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    background-position: 50% 50%; /* позиция пикто в кружочке */
+    margin-left: auto;
+    transform: scale(1);  
 }
-.out {
-    /* background-color: #ff4e50; */
+.outer-box1 {
     background: url(../img/Layer_6.png) no-repeat;
-
     width: 122px;
     height: 122px;
     border-radius: 100%;
-
+    display: flex;
+    align-items: flex-end; /* вертикаль содержимого */
 }
-.picto1{
-    width: 32px;
-    height: 32px;
-    background-color: #ff4e50;
+.card1:hover .inner-box1, .card2:hover .inner-box2, .card3:hover .inner-box3, .card4:hover .inner-box4 {
+    transform: scale(1.05);
+}
+
+.inner-box2 {
+    background: url(../img/Shape155.svg) no-repeat;
+    width: 36px;
+    height: 36px;
+    background-color: #ffa507;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
     border-radius: 100%;
-    border: 4px solid white;
-    /* background: url(../img/Shape128.svg) no-repeat; */
-    /* background-position: 50% 50%;   */
-    /* margin: auto; */
+    background-position: 50% 50%; /* позиция пикто в кружочке */
+    margin-left: auto;
+    transform: scale(1);  
+}
+.outer-box2 {
+    background: url(../img/Layer_8.png) no-repeat;
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+    display: flex;
+    align-items: flex-end; /* вертикаль содержимого */
+}
+
+.inner-box3 {
+    background: url(../img/Shape153.svg) no-repeat;
+
+    width: 36px;
+    height: 36px;
+    background-color: #1cd7ad;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    background-position: 50% 50%; /* позиция пикто в кружочке */
+    margin-left: auto;
+    transform: scale(1);  
+}
+.outer-box3 {
+    background: url(../img/Layer_7.png) no-repeat;
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+    display: flex;
+    align-items: flex-end; /* вертикаль содержимого */
+}
+
+.inner-box4 {
+    background: url(../img/Shape170.svg) no-repeat;
+    width: 36px;
+    height: 36px;
+    background-color: #4e73db;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    background-position: 50% 50%; /* позиция пикто в кружочке */
+    margin-left: auto;
+    transform: scale(1);  
+}
+.outer-box4 {
+    background: url(../img/Layer_9.jpg) no-repeat;
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+    display: flex;
+    align-items: flex-end; /* вертикаль содержимого */
 }
 
 
 
 
-/* body {
-    background-color: teal;
-}
-@media screen and (min-width: 800px) {
-    body {
-        background-color: rgb(107, 0, 128);
-    }   
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    h2 {
+        font-size: 52px;  
+    }
+    .description-up {
+        font-size: 23px;  
+    }
+
+} 
