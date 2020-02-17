@@ -7,9 +7,64 @@
 
 .header-topline {
   background-color: #1abc9c;
+  
+}
+.layout {
+width: 1110px;
+}
+.header-topline__address {
+  display: flex;
+}
+.header-topline__menu {
+  display: flex;
+}
+.header-topline__menu-item, .header-topline__address  {
+  /* text-decoration: none;  */
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+
+
+
+.header-bottomline__menu-item{
+  text-transform: uppercase;
+  /* text-decoration: none;  */
+  font-family: 'Open Sans', sans-serif;
+  color: #0f0101;
+  font-size: 14px;
+  font-weight: 900;
+}
+.header-bottomline__menu li:hover a {
+  color: #1abc9c;
+}
+a {
+  text-decoration: none; 
+}
+h1 a{
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #555252;
+}
+h1::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
 }
 .top-slider__content {
+  background-color: #323232;
   background-image: url(../img/hw-mine.jpg);
   width: 100%;
   background-repeat: no-repeat;
 }
+/* .name {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: #0f0101;
+  font-size: 14px;
+  font-weight: 900;
+} */
