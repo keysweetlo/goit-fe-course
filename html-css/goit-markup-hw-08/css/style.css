@@ -175,24 +175,235 @@ h1::first-letter {
 
 
 
+
+
+
+
+
+
+
+
 .collection {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  align-items: center; /* вертикаль */
+  justify-content: center;  /* горизонталь */
+
+  text-align: center; 
   min-height: 765px;
   background-color: #e9f0fd;
+
 }
-.collection__assortment {
+.collection__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 560px;
+  /* height: 800px; */
+}
+.collection__top-title {
+  display: flex;
+  flex-direction: column;
+
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #555252;
+}
+.collection__top-title::after {
+  content: '';
+  width: 164px;
+  height: 7px;
+  margin: 0 auto;
+  background: #1abc9c;
+  display: block;
+  margin-top: 19px;
+  /* margin-bottom: 120px; */
+}
+
+
+
+
+
+
+
+
+
+.shop__assortment {
   display: flex;
   /* text-align: center; */
   margin: auto;
   flex-wrap: wrap;/*разрешаем перенос*/
+  align-items: center; /* вертикаль */
+  justify-content: center;  /* горизонталь */
+
 }
-.collection__card {
-  display: flex;
-  flex-direction: column;
+.shop__card {
+  /* display: flex; */
+  /* flex-direction: column; */
 
   margin-left: 15px;
   margin-right: 15px;
+  position: relative;
 }
+
+.shop__overlay::after {
+  position: absolute;
+  content: '';
+  width: 235px;
+  height: 260px;
+  background-color: rgba(0, 0, 0, 0); 
+  display: block;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%) ;
+}
+.shop__card:hover .shop__overlay::after {
+  background-color: rgba(0, 0, 0, 0.52); 
+}
+.shop__frame {
+  display: flex;
+  align-items: center; /* вертикаль */
+  justify-content: center;  /* горизонталь */
+
+  position: absolute;
+  border: 10px solid rgba(255, 255, 255, 0.55);
+  width: 100%;
+  height: 280px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) ;
+  z-index: 70;
+  opacity: 0%;
+
+}
+.shop__card:hover .shop__frame  {
+  opacity: 100%;
+}
+
+.shop__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  /* горизонталь */
+
+  height: 106px;
+
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); */
+  z-index: 100;
+  }
+.shop__top-icon {
+  display: flex;
+  align-items: center; /* вертикаль */
+  justify-content: space-between;  /* горизонталь */
+  width: 164px;
+}
+.pe-7s-like, .pe-7s-shuffle, .pe-7s-clock {
+  display: flex;
+  display: flex;
+  align-items: center; /* вертикаль */
+  justify-content: center;  /* горизонталь */
+
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  background: none;
+  color: white;
+  /* margin-right: 2px; */
+  /* margin-bottom: 5px; */
+}
+.shop__bottom-icon {
+  display: flex;
+  align-items: center; /* вертикаль */
+  justify-content: space-evenly;  /* горизонталь */
+  /* position: relative; */
+  background-color: #323232;
+  width: 164px;
+  height: 50px;
+  border: 1px solid white;
+  color: white;
+} 
+.icon {
+  font-size: 30px;
+}
+.pe-7s-cart {
+  /* position: absolute; */
+  /* left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100; */
+}
+.icon-text {
+  /* position: absolute; */
+  text-transform: uppercase;
+  /* display: inline-block; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  /* right: 17px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100; */
+}
+
+
+
+.icon:hover, .shop__bottom-icon:hover{
+  background-color: #1abc9c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shop__card-bottom {
+  display: flex;
+  background-color: #323232;
+  color: white;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;  
+  font-weight: 900;
+  text-transform: uppercase; 
+  align-items: center; /* вертикаль */
+  margin-top: -4px;
+
+}
+.shop__card:hover .shop__card-bottom {
+  background-color: #1abc9c;
+}
+
+.shop__title {
+  margin-left: 15px;
+  /* text-align: center; */
+  color: white;
+
+}
+.shop__price {
+  display: flex;
+  background-color: #ffffff33;
+  /* text-align: center; */
+  width: 55px;
+  height: 40px;
+  align-items: center; /* вертикаль */
+  justify-content: center;  /* горизонталь */
+
+}
+
+
+
