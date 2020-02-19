@@ -16,7 +16,6 @@ a {
 
 
 .header-topline {
-  /* display: flex; */
   background-color: #1abc9c;
 }
 .layout {
@@ -89,19 +88,18 @@ h1::first-letter {
 
 
 
-.top-slider {
+.banner {
   display: flex;
-  background-color: #323232;
   background-image: url(../img/hw-mine.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.top-slider__content {
-    background-color: #0000009c;
+.banner__content {
+    background-color: #00000054;
     width: 100%;
 }
-.top-slider__text {
+.banner__text {
   display: flex;
   height: 600px;
   justify-content: center;  
@@ -110,7 +108,7 @@ h1::first-letter {
   margin: auto;
   flex-direction: column;
 }
-.top-slider__name {
+.banner__name {
   color: white;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
@@ -118,7 +116,11 @@ h1::first-letter {
   margin-bottom: 15px; 
   max-width: 800px;
 }
-.top-slider__button {
+.green-letter {
+  color: #1abc9c;
+  font-weight: 600;
+}
+.banner__button {
   background-color: rgb(26, 188, 156);
   width: 116px;
   height: 38px;
@@ -128,10 +130,69 @@ h1::first-letter {
   text-transform: uppercase; 
 }
 
-.line-bonus__icon {
+
+
+.bonus__content {
+  display: flex;
+  align-items: center; /* вертикаль */
+  flex-wrap: wrap;/*разрешаем перенос*/
+  justify-content: center;  /* горизонталь */
+  min-height: 450px;
+}
+.bonus__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 250px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+  height: 290px;
+}
+.bonus__icon {
+  display: flex;
+  align-items: center; /* вертикаль */
+  justify-content: center;  /* горизонталь */
   color: #1abc9c;
-  font-size: 70px;  
+  font-size: 70px; 
+  height: 100px;
+}
+.bonus__title {
+  display: flex;
+  align-items: center; /* вертикаль */
+  justify-content: center;  /* горизонталь */
+  font-family: 'Open Sans', sans-serif;
+  color: #555252;
+  font-size: 18px;  
+  height: 80px;
+}
+.bonus__description{
+  font-family: 'Open Sans', sans-serif;
+  color: #555252;
+  font-size: 14px; 
+  line-height: 24px; 
 }
 
 
 
+.collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 765px;
+  background-color: #e9f0fd;
+}
+.collection__assortment {
+  display: flex;
+  /* text-align: center; */
+  margin: auto;
+  flex-wrap: wrap;/*разрешаем перенос*/
+}
+.collection__card {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 15px;
+  margin-right: 15px;
+}
