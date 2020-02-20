@@ -88,6 +88,7 @@ h1::first-letter {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 .banner__content {
     background-color: #00000054;
@@ -211,11 +212,11 @@ h1::first-letter {
 .news__top-title::after {
   content: '';
   width: 164px;
-  height: 7px;
   margin: 0 auto;
-  background: #1abc9c;
   display: block;
   margin-top: 19px;
+  border-top: 8px double #1abc9c;
+  border-bottom: 8px double #1abc9c;
 }
 
 
@@ -485,9 +486,7 @@ h1::first-letter {
   font-size: 14px;
   color: #555252;
   line-height: 24px; 
-
   margin-bottom: 15px;
-
 }
 .news-article__button{
   border-radius: 4px;
@@ -511,30 +510,70 @@ h1::first-letter {
 
 .newsletter {
   display: flex;
+  flex-direction: column;
   align-items: center; /* вертикаль */
   justify-content: center;  /* горизонталь */
   text-align: center; 
   min-height: 460px;
   background-color: #4ec6ab;
+  background-image: url(../img/bg2decor-full.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .newsletter__top-title {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 48px;
-  color: #ffffff;
-  min-height: 255px;
+  color: #515151;
+  margin-bottom: 30px;
 }
-
 .newsletter__top-title::after {
   content: '';
   width: 164px;
-  height: 7px;
   margin: 0 auto;
-  background: #ffffff;
   display: block;
   margin-top: 19px;
+  border-top: 8px double white;
+  border-bottom: 8px double white;
 }
+.newsletter__instruction {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+
+.newsletter__form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 540px;
+  height: 60px;
+  border-radius: 4px;
+  background: white;
+}
+.input {
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  margin-left: 29px;
+}
+
+.pe-7s-next {
+  width: 90px;
+  height: 56px;
+  background: #4ec6ab;
+  color: white;
+  font-size: 50px;
+  margin-right: 2px;
+}
+
+
