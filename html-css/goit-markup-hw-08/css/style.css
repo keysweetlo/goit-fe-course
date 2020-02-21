@@ -18,7 +18,7 @@ a {
 .header-topline {
   background-color: #1abc9c;
 }
-.layout {
+.container {
   max-width: 1110px;
   display: flex;
   flex-wrap: wrap;/*разрешаем перенос*/
@@ -417,7 +417,7 @@ h1::first-letter {
 
 
 @media screen and (min-width: 800px) {
-  .layout {
+  .container {
     justify-content: space-between;
     margin: auto;
   }
