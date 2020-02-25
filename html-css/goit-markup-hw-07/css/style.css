@@ -6,7 +6,7 @@
 }
 
     /* ШРИФТЫ И НАЧЕРТАНИЯ */
-    .topline, .section-down {
+    .topline, .main {
         font-family: 'Montserrat', sans-serif;
     }
     .description-up, .description-down {
@@ -64,14 +64,13 @@
 
 /* ШАПКАААА */
 .topline {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* margin: auto; */
-    background: url(../img/head-mob.jpg) no-repeat;
-    /* width: 100%; */
+    background: url(../img/head-mob.jpg) no-repeat center;
     background-size: cover;
     min-height: 540px;
     margin-bottom: 70px;
+}
+.header-topline {
+    margin-bottom: 26px;
 }
 .header-topline__user-wrapper {
     display: flex;
@@ -82,15 +81,11 @@
 .header-topline__button {
     height: 36px;
     width: 90px;
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
     background-color: rgba(26, 25, 21, 0);  
 }
 .header-topline__button:hover {
     height: 36px;
     width: 90px;
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
     border-radius: 18px;
     border-style: solid;
     border-width: 2px;
@@ -104,38 +99,35 @@
     justify-content: center;  /* горизонталь */
 }
 .tagline {
-    display: flex;
-    height: 100px;
-    align-items: flex-end; /* вертикаль */
-    justify-content: center;  /* горизонталь */
     text-align: center;
+    margin-bottom: 10px;
 }
 .description-up {
     display: flex;
-    height: 70px;
-    align-items: center; /* вертикаль */
     text-align: center;
     width: 230px;
     margin: auto;
+    margin-bottom: 20px;
 }
 .a-conteiner-up {
     display: flex;
-    /* height: 180px; */
-    align-items: flex-start; /* вертикаль */
-    justify-content: center;  /* горизонталь */
+    align-items: flex-start; 
+    /* вертикаль */
+    justify-content: center;  
+    /* горизонталь */
     text-align: center;
 }
 .a-up {
-    display: flex;
-    align-items: center; /* вертикаль */
-    justify-content: center;  /* горизонталь */
-
+/* Сверху | Справа | Снизу | Слева */
+    padding: 10px 50px 10px 50px;
     background-color: rgb(255, 78, 80);
-    height: 40px;
     border-radius: 20px;
-    width: 280px;
 }
-
+.article-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 
@@ -147,15 +139,15 @@
 .face {
     display: flex;
     height: 160px;
-    align-items: center; /* вертикаль */
-    justify-content: center;  /* горизонталь */
+    align-items: center; 
+    /* вертикаль */
+    justify-content: center;  
+    /* горизонталь */
 }
 h4 {
-    display: flex;
-    height: 33px;
-    align-items: flex-start; /* вертикаль */
-    justify-content: center;  /* горизонталь */
     text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 .description-down {
     display: flex;
@@ -177,13 +169,14 @@ h4 {
     justify-content: center;  /* горизонталь */
 
     background-color: rgba(255, 78, 81, 0);
-    height: 40px;
     border-radius: 20px;
-    width: 280px;
 
     border-style: solid;
     border-width: 2px;
     border-color: #ff4e50;
+
+    /* Сверху | Справа | Снизу | Слева */
+    padding: 10px 50px 10px 50px;
 }
 
 
@@ -308,7 +301,7 @@ h4 {
 
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 748px) {
     h2 {
         font-size: 52px;  
     }
@@ -320,7 +313,8 @@ h4 {
         justify-content: space-between;
         flex-direction: row-reverse;
         width: 660px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .header-topline__user-wrapper {
         height: 110px;
@@ -330,23 +324,28 @@ h4 {
         align-items: center; /* вертикаль */
     }
     .tagline {
-        height: 215px;
-        text-align: center;
         width: 520px;
         margin: auto;
+        margin-bottom: 33px;
     }
     .description-up {
-        height: 100px;
         width: 800px;
         justify-content: center;
+        margin-bottom: 33px;
+
     }
     .a-conteiner-up {
-        /* height: 280px; */
+        margin-bottom: 220px;
+
     }
     .topline {
-        background: url(../img/head-tab.jpg) no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url(../img/head-tab.jpg) no-repeat center;
         background-size: cover;
-    
+        min-height: 700px;
+        /* margin: auto; */
     }
     
 
@@ -358,27 +357,21 @@ h4 {
         justify-content: space-between;
     }
     .tagline-down {
-        /* height: 100px; */
     }
     .face {
         height: 160px;
         align-items: flex-end; /* вертикаль */
     }
     h4 {
-        align-items: center; /* вертикаль */
-        height: 50px;
     }
     .description-down {
-        display: flex;
-        align-items: center; /* вертикаль */
-        text-align: center;
         width: 230px;
         margin: auto;
     }
 } 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 960px) {
     .topline {
-        background: url(../img/head-des.jpg) no-repeat;
+        background: url(../img/head-des.jpg) no-repeat center;
         background-size: cover;
         
     }
