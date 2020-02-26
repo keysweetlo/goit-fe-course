@@ -62,7 +62,7 @@
 
 
 
-/* ШАПКАААА */
+/* ТОПЛАЙН */
 .topline {
     background: url(../img/head-mob.jpg) no-repeat center;
     background-size: cover;
@@ -193,98 +193,51 @@ h4 {
 
 
 /* ПИКТОГРАМКИ */
-.inner-box1 {
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;   */
+    margin-top: 20px;
+}
+.team-face {
+    display: flex;
+    justify-content: flex-end;
+    /* горизонталь содержимого */
+    align-items: flex-end; 
+    /* вертикаль содержимого */
+}
+.team-face {
+    border-radius: 100%;
+}
+.icon1::after {
     background: url(../img/Shape128.svg) no-repeat;
-    width: 36px;
-    height: 36px;
     background-color: #ff4e50;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgb(255, 255, 255);
-    border-radius: 100%;
-    background-position: 50% 50%; /* позиция пикто в кружочке */
-    margin-left: auto;
-    transform: scale(1);  
 }
-.outer-box1 {
-    background: url(../img/Layer_6.png) no-repeat;
-    width: 122px;
-    height: 122px;
-    border-radius: 100%;
-    display: flex;
-    align-items: flex-end; /* вертикаль содержимого */
-}
-.card1:hover .inner-box1, .card2:hover .inner-box2, .card3:hover .inner-box3, .card4:hover .inner-box4 {
-    transform: scale(1.05);
-}
-
-.inner-box2 {
+.icon2::after {
     background: url(../img/Shape155.svg) no-repeat;
-    width: 36px;
-    height: 36px;
     background-color: #ffa507;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgb(255, 255, 255);
-    border-radius: 100%;
-    background-position: 50% 50%; /* позиция пикто в кружочке */
-    margin-left: auto;
-    transform: scale(1);  
 }
-.outer-box2 {
-    background: url(../img/Layer_8.png) no-repeat;
-    width: 122px;
-    height: 122px;
-    border-radius: 100%;
-    display: flex;
-    align-items: flex-end; /* вертикаль содержимого */
-}
-
-.inner-box3 {
+.icon3::after {
     background: url(../img/Shape153.svg) no-repeat;
-
-    width: 36px;
-    height: 36px;
     background-color: #1cd7ad;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgb(255, 255, 255);
-    border-radius: 100%;
-    background-position: 50% 50%; /* позиция пикто в кружочке */
-    margin-left: auto;
-    transform: scale(1);  
 }
-.outer-box3 {
-    background: url(../img/Layer_7.png) no-repeat;
-    width: 122px;
-    height: 122px;
-    border-radius: 100%;
-    display: flex;
-    align-items: flex-end; /* вертикаль содержимого */
-}
-
-.inner-box4 {
+.icon4::after {
     background: url(../img/Shape170.svg) no-repeat;
+    background-color: #4e73db;
+}
+.team-face::after {
+    content: '';
+    position: absolute;
     width: 36px;
     height: 36px;
-    background-color: #4e73db;
     border-style: solid;
     border-width: 4px;
     border-color: rgb(255, 255, 255);
     border-radius: 100%;
     background-position: 50% 50%; /* позиция пикто в кружочке */
-    margin-left: auto;
-    transform: scale(1);  
+    transform: scale(1); 
 }
-.outer-box4 {
-    background: url(../img/Layer_9.jpg) no-repeat;
-    width: 122px;
-    height: 122px;
-    border-radius: 100%;
-    display: flex;
-    align-items: flex-end; /* вертикаль содержимого */
-}
-
 
 
 
@@ -356,13 +309,9 @@ h4 {
         margin: auto;
         justify-content: space-between;
     }
-    .tagline-down {
-    }
     .face {
         height: 160px;
         align-items: flex-end; /* вертикаль */
-    }
-    h4 {
     }
     .description-down {
         width: 230px;
