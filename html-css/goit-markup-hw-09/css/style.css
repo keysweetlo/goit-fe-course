@@ -43,9 +43,10 @@ a {
 }
 
 .header-topline__icon {
-  color: white;
+  /* color: white; */
   width: 20px;
   height: 20px;
+  fill: white;
 }
 
 
