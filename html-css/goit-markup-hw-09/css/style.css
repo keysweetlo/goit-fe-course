@@ -43,9 +43,10 @@ a {
 }
 
 .header-topline__icon {
-  color: white;
+  /* color: white; */
   width: 20px;
   height: 20px;
+  fill: white;
 }
 
 
@@ -149,25 +150,8 @@ h1::first-letter {
 }
 .bonus__icon {
   color: #1abc9c;
-  font-size: 70px;  
 }
-.bonus__article::before {
-  font-family: 'Pe-icon-7-stroke';
-  color: #1abc9c;
-  font-size: 70px;  
-}
-.settings::before {
-  content: '\e6c4';
-}
-.safe::before {
-  content: '\e698';
-}
-.global::before {
-  content: '\e64f';
-}
-.compass::before {
-  content: '\e667';
-}
+
 
 
 
@@ -281,19 +265,19 @@ h1::first-letter {
 .shop__card:hover .shop__frame  {
   opacity: 100%;
 }
-.shop__icon {
+.shop__buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-between;  /* горизонталь */
   height: 106px;
   }
-.shop__top-icon {
+.shop__buttons-top {
   display: flex;
   align-items: center; /* вертикаль */
   justify-content: space-between;  /* горизонталь */
   width: 164px;
 }
-.shop__button-like, .shop__button-shuffle, .shop__button-clock {
+.shop__button-icon {
   display: flex;
   align-items: center; /* вертикаль */
   justify-content: center;  /* горизонталь */
@@ -316,10 +300,6 @@ h1::first-letter {
 } 
 
 
-.icon {
-  font-size: 30px;
-  font-family: 'Pe-icon-7-stroke';
-}
 .icon-text {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
