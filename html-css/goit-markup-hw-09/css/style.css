@@ -556,6 +556,8 @@ h1::first-letter {
   height: 60px;
   border-radius: 4px;
   background: white;
+  border: 2px double white;
+
 }
 .input {
   width: 300px;
@@ -563,14 +565,21 @@ h1::first-letter {
   font-size: 16px;
   margin-left: 29px;
 }
-
-.pe-7s-next {
+.button-icon {
   width: 90px;
-  height: 56px;
+  height: 60px;
+  border: 2px double white;
+  border-right: none;
+
+  /* height: 56px; */
   background: #4ec6ab;
-  color: white;
-  font-size: 50px;
-  margin-right: 2px;
+  /* margin-right: 2px; */
+
+}
+.next {
+  width: 40px;
+  height: 40px;
+  fill: white;
 }
 
 
