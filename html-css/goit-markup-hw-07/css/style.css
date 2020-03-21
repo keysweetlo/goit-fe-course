@@ -1,0 +1,333 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* ШРИФТЫ И НАЧЕРТАНИЯ */
+    .topline, .main {
+        font-family: 'Montserrat', sans-serif;
+    }
+    .description-up, .description-down {
+        font-family: 'Roboto', sans-serif;
+    }
+    h1 a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;  
+    }
+    .header-topline__button {
+        color: white;
+        font-size: 14px;  
+    }
+    h2 {
+        color: white;
+        font-size: 30px;  
+        text-transform: uppercase; 
+    }
+    h3 {
+        color: #333333;
+        font-size: 22px;   
+    }
+    h4 {
+        color: #333333;
+        font-size: 14px;   
+    }
+    .description-up {
+        color: white;
+        font-size: 18px;  
+    }
+    .a-up {
+        color: white;
+        font-size: 14px;  
+    }
+    .a-down {
+        color: #ff4e50;
+        font-size: 14px;  
+    }
+    a {  
+        text-decoration: none;
+    }
+    li {
+        list-style: none;
+      }
+    .description-down {
+        color: #666666;
+        font-size: 14px;  
+    }
+
+
+
+
+
+
+/* ТОПЛАЙН */
+.topline {
+    background: url(../img/head-mob.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 540px;
+    margin-bottom: 70px;
+}
+.header-topline {
+    margin-bottom: 26px;
+}
+.header-topline__user-wrapper {
+    display: flex;
+    justify-content: center;  
+    height: 80px;
+    align-items: center;
+}
+.header-topline__button {
+    height: 36px;
+    width: 90px;
+    background-color: rgba(26, 25, 21, 0);  
+}
+.header-topline__button:hover {
+    height: 36px;
+    width: 90px;
+    border-radius: 18px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(26, 25, 21, 0);  
+}
+.logo {
+    display: flex;
+    height: 110px;
+    align-items: flex-end; /* вертикаль */
+    justify-content: center;  /* горизонталь */
+}
+.tagline {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.description-up {
+    display: flex;
+    text-align: center;
+    width: 230px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.a-conteiner-up {
+    display: flex;
+    align-items: flex-start; 
+    /* вертикаль */
+    justify-content: center;  
+    /* горизонталь */
+    text-align: center;
+}
+.a-up {
+/* Сверху | Справа | Снизу | Слева */
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(255, 78, 80);
+    border-radius: 20px;
+}
+.article-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+/* ФУТЕР */
+.tagline-down {
+    text-align: center;
+}
+.face {
+    display: flex;
+    height: 160px;
+    align-items: center; 
+    /* вертикаль */
+    justify-content: center;  
+    /* горизонталь */
+}
+h4 {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.description-down {
+    text-align: center;
+    width: 230px;
+}
+.a-conteiner-down {
+    display: flex;
+    height: 100px;
+    align-items: center; /* вертикаль */
+    justify-content: center;  /* горизонталь */
+    text-align: center;
+    margin-bottom: 30px;
+}
+.a-down {
+    display: flex;
+    align-items: center; /* вертикаль */
+    justify-content: center;  /* горизонталь */
+
+    background-color: rgba(255, 78, 81, 0);
+    border-radius: 20px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff4e50;
+
+    /* Сверху | Справа | Снизу | Слева */
+    padding: 10px 50px 10px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ПИКТОГРАМКИ */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+}
+.team-face {
+    display: flex;
+    justify-content: flex-end;
+    /* горизонталь содержимого */
+    align-items: flex-end; 
+    /* вертикаль содержимого */
+}
+.team-face {
+    border-radius: 100%;
+}
+.icon1::after {
+    background: url(../img/Shape128.svg) no-repeat;
+    background-color: #ff4e50;
+}
+.icon2::after {
+    background: url(../img/Shape155.svg) no-repeat;
+    background-color: #ffa507;
+}
+.icon3::after {
+    background: url(../img/Shape153.svg) no-repeat;
+    background-color: #1cd7ad;
+}
+.icon4::after {
+    background: url(../img/Shape170.svg) no-repeat;
+    background-color: #4e73db;
+}
+.team-face::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    background-position: 50% 50%; /* позиция пикто в кружочке */
+    transform: scale(1); 
+}
+
+.card:hover .team-face::after {
+    transform: scale(1.1); 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 748px) {
+    h2 {
+        font-size: 52px;  
+    }
+    .description-up {
+        font-size: 23px;  
+    }
+    .header-topline {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width: 660px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-topline__user-wrapper {
+        height: 110px;
+    }
+    .logo {
+        height: 110px;
+        align-items: center; /* вертикаль */
+    }
+    .tagline {
+        width: 520px;
+        margin: auto;
+        margin-bottom: 33px;
+    }
+    .description-up {
+        width: 800px;
+        justify-content: center;
+        margin-bottom: 33px;
+
+    }
+    .a-conteiner-up {
+        margin-bottom: 220px;
+
+    }
+    .topline {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url(../img/head-tab.jpg) no-repeat center;
+        background-size: cover;
+        min-height: 700px;
+        /* margin: auto; */
+    }
+    
+
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .face {
+        height: 160px;
+        align-items: flex-end; /* вертикаль */
+    }
+    .description-down {
+            min-height: 70px;
+    }
+} 
+@media screen and (min-width: 960px) {
+    .topline {
+        background: url(../img/head-des.jpg) no-repeat center;
+        background-size: cover;
+        
+    }
+    .header-topline {
+        width: 940px;
+    }
+    .team {
+        width: 940px;
+    }
+}
